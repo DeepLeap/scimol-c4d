@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/yuke-lockup-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/yuke-lockup-dark.svg">
-  <img alt="与可 | YUKE" src="./assets/brand/yuke-lockup-dark.svg" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/yuke-lockup-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/yuke-lockup-light.svg">
+  <img alt="与可 | YUKE" src="./assets/brand/yuke-lockup-light.svg" height="48">
 </picture>
 
 # SciMol C4D
@@ -13,10 +13,10 @@
 支持名称 / 分子式 / SMILES 搜索与 ChemDraw 复制导入，一键生成精美三维分子模型
 
 <p>
-  <img src="https://img.shields.io/badge/Cinema_4D-2025.3+_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
-  <img src="https://img.shields.io/badge/Redshift-Standard_材质-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Redshift" />
-  <img src="https://img.shields.io/badge/ChemDraw-复制_%2F_导入-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
-  <img src="https://img.shields.io/badge/RDKit-化学引擎-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="RDKit" />
+  <img src="https://img.shields.io/badge/Cinema_4D-2025.3%2B_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
+  <img src="https://img.shields.io/badge/Redshift-Standard_%E6%9D%90%E8%B4%A8-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Redshift" />
+  <img src="https://img.shields.io/badge/ChemDraw-%E5%A4%8D%E5%88%B6_%C2%B7_%E5%AF%BC%E5%85%A5-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
+  <img src="https://img.shields.io/badge/RDKit-%E5%8C%96%E5%AD%A6%E5%BC%95%E6%93%8E-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="RDKit" />
   <img src="https://img.shields.io/badge/License-MIT-111827?style=flat-square&labelColor=111827&color=94A3B8" alt="MIT" />
 </p>
 

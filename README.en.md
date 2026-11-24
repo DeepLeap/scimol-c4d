@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/yuke-lockup-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/yuke-lockup-dark.svg">
-  <img alt="YUKE | 与可" src="./assets/brand/yuke-lockup-dark.svg" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/yuke-lockup-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/yuke-lockup-light.svg">
+  <img alt="YUKE | 与可" src="./assets/brand/yuke-lockup-light.svg" height="48">
 </picture>
 
 # SciMol C4D
@@ -13,9 +13,9 @@
 Search by Name, Formula, or SMILES — or Copy & Import from ChemDraw — to Build Publication-Ready 3D Molecules in One Click
 
 <p>
-  <img src="https://img.shields.io/badge/Cinema_4D-2025.3+_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
+  <img src="https://img.shields.io/badge/Cinema_4D-2025.3%2B_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
   <img src="https://img.shields.io/badge/Redshift-Standard_Materials-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Redshift" />
-  <img src="https://img.shields.io/badge/ChemDraw-Copy_%2F_Import-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
+  <img src="https://img.shields.io/badge/ChemDraw-Copy_%26_Import-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
   <img src="https://img.shields.io/badge/RDKit-Chemistry_Engine-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="RDKit" />
   <img src="https://img.shields.io/badge/License-MIT-111827?style=flat-square&labelColor=111827&color=94A3B8" alt="MIT" />
 </p>
