@@ -1,0 +1,17 @@
+{
+  "id": "scimol-ball-stick",
+  "name": "分子球棍生成器",
+  "short_name": "分子球棍",
+  "version": "1.2.0",
+  "author": "与可 | YUKE",
+  "brand": "YUKE · DeepLeap",
+  "homepage": "https://github.com/DeepLeap/scimol-c4d",
+  "description": "名称、分子式、SMILES 或 ChemDraw 文件生成球棍／填充／细棍分子，支持科研配色、二维平面编辑、独立键材质与收藏。",
+  "usage": "统一搜索名称／分子式／SMILES；点击缩略图替换实时预览，调整即生效，完成后保留模型；点击接管所选可继续联动，结构详情可平面编辑。",
+  "entry": "分子球棍生成器.py",
+  "icon": "界面图标.png",
+  "category": "科研可视化",
+  "icon_text": "分子",
+  "accent": "blue",
+  "tags": ["分子", "化学", "ChemDraw", "球棍", "SMILES", "收藏", "与可", "YUKE"]
+}

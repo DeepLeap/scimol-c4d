@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# SciMol runtime & data
+.runtime/
+数据/
+
+# Test outputs (generated at runtime)
+测试/输出/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Docs superpowers (internal dev notes)
+docs/superpowers/

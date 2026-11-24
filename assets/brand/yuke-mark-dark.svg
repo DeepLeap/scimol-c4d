@@ -1,0 +1,11 @@
+<svg id="yuke-icon-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="与可 YUKE 暗底反白图标（含 -6% 辐照收缩补偿）">
+  <!-- 暗黑背景反白实施 -6% 辐照内缩补偿（每侧边缘内移 0.24 px，Wv 由 8.00 px 调至 7.52 px） -->
+  <g id="layer-primary" fill="#F8FAFC">
+    <path id="layer-trunk" d="M 22.74 39.49 H 30.26 V 55.76 H 22.74 Z"/>
+    <path id="layer-culm" d="M 22.74 36.51 V 32.00 A 42.24 42.24 0 0 0 15.19 7.89 L 19.96 11.39 A 25.76 25.76 0 0 1 30.26 32.00 V 36.51 Z"/>
+    <path id="layer-arm" d="M 33.24 21.61 L 40.96 8.24 H 49.18 L 33.24 35.85 Z"/>
+  </g>
+  <g id="layer-accent" fill="#2DD4BF">
+    <path id="layer-leaf" d="M 33.48 39.68 A 25.76 25.76 0 0 1 49.21 56.69 A 41.76 41.76 0 0 1 33.48 39.68 Z"/>
+  </g>
+</svg>

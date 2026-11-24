@@ -1,0 +1,11 @@
+<svg id="yuke-favicon-micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="与可 YUKE 微缩光学版 Favicon（16-28px 专用，g=4.0px 整像素对齐）">
+  <!-- 专供 16x16 至 28x28 px 微缩尺寸：负空间十字缝隙扩至 g = 4.0 px 并对齐 4 单位整数网格 -->
+  <g id="layer-primary" fill="#111827">
+    <path id="layer-trunk" d="M 20.00 40.00 H 28.00 V 56.00 H 20.00 Z"/>
+    <path id="layer-culm" d="M 20.00 36.00 V 32.00 A 42.0 42.0 0 0 0 11.60 6.80 L 17.60 11.20 A 26.0 26.0 0 0 1 28.00 32.00 V 36.00 Z"/>
+    <path id="layer-arm" d="M 32.00 20.80 L 39.39 8.00 H 48.17 L 32.00 36.00 Z"/>
+  </g>
+  <g id="layer-accent" fill="#0F766E">
+    <path id="layer-leaf" d="M 32.00 40.00 A 26.0 26.0 0 0 1 48.00 57.20 A 42.0 42.0 0 0 1 32.00 40.00 Z"/>
+  </g>
+</svg>

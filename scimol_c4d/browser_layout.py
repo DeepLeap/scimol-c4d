@@ -1,0 +1,151 @@
+"""Native library and adjustments; structure details open separately."""
+import c4d
+from .native_ui import add_action, add_brand_logo, add_icon
+from .resource_browser import FolderFunctions, ThumbnailArea
+from .atom_selector import AtomSelectionPanel
+
+
+def build(p, ids):
+    fit = c4d.BFH_SCALEFIT
+    stretch = fit | c4d.BFV_SCALEFIT
+    p.SetTitle("分子资源库")
+    p.GroupBegin(2, fit, cols=2)
+    p.GroupBorderSpace(10, 6, 10, 4)
+    p.AddStaticText(0, fit | getattr(c4d, "BFV_CENTER", 0), name="分子资源库")
+    add_brand_logo(
+        p,
+        ids.BRAND_LOGO,
+        width=104,
+        height=28,
+        tooltip="出品：与可 | YUKE (DeepLeap) — 点击查看作者与当前分子信息",
+        align_right=True,
+    )
+    p.GroupEnd()
+    p.GroupBegin(ids.ROOT_LAYOUT, stretch, cols=2, groupflags=c4d.BFV_GRIDGROUP_ALLOW_WEIGHTS)
+    p.GroupSpace(8, 0)
+    p.GroupBegin(ids.LIBRARY_GROUP, stretch, cols=1)
+    p.GroupBorderSpace(10, 6, 6, 10)
+    p.GroupSpace(6, 8)
+    p.GroupBegin(12, fit, cols=3)
+    p.GroupSpace(4, 0)
+    p.AddEditText(ids.INPUT, fit, initw=210)
+    add_icon(p, ids.RESOLVE, "search.png", "输入或粘贴名称、分子式、SMILES；自动识别并查找（回车直达）")
+    add_action(p, ids.PASTE_SEARCH, "粘贴", "读取剪贴板中的名称、分子式或 SMILES 并立即搜索")
+    p.GroupEnd()
+    p.AddStaticText(ids.SEARCH_STATUS, fit, name="")
+    p.GroupBegin(ids.SUGGEST_GROUP, fit, cols=4)
+    p.GroupSpace(4, 4)
+    p.GroupEnd()
+    p.GroupBegin(13, c4d.BFH_LEFT, cols=5)
+    add_icon(p, ids.IMPORT, "import.png", "导入 ChemDraw CDXML、MOL 或 SDF")
+    add_icon(p, ids.NEW_FOLDER, "folder_add.png", "新建收藏文件夹")
+    add_icon(p, ids.SAVE, "favorite_add.png", "收藏当前结构到选中的文件夹")
+    add_icon(p, ids.MORE, "more.png", "收藏管理与导入导出")
+    add_action(p, ids.DELETE_SELECTED, "删除", "删除左侧所选资源；不删除场景模型")
+    p.GroupEnd()
+    p.GroupBegin(14, stretch, cols=2, groupflags=c4d.BFV_GRIDGROUP_ALLOW_WEIGHTS)
+    p.GroupSpace(8, 0)
+    settings = c4d.BaseContainer()
+    settings.SetBool(c4d.TREEVIEW_HAS_HEADER, False)
+    settings.SetBool(c4d.TREEVIEW_HIDE_LINES, True)
+    settings.SetInt32(c4d.TREEVIEW_BORDER, c4d.BORDER_THIN_IN)
+    p.folder_tree = p.AddCustomGui(ids.FOLDER_TREE, c4d.CUSTOMGUI_TREEVIEW, "",
+                                   c4d.BFH_LEFT | c4d.BFV_SCALEFIT, 180, 300, settings)
+    p.folder_functions = FolderFunctions(p)
+    layout = c4d.BaseContainer(); layout.SetInt32(0, c4d.LV_USERTREE)
+    p.folder_tree.SetLayout(1, layout)
+    p.folder_tree.SetRoot(p, p.folder_functions, None)
+    p.ScrollGroupBegin(ids.CARDS, stretch, c4d.SCROLLGROUP_VERT | c4d.SCROLLGROUP_AUTOVERT,
+                       initw=210, inith=300)
+    p.thumbnail_area = ThumbnailArea(p)
+    p.AddUserArea(ids.THUMBNAILS, fit | c4d.BFV_TOP, initw=210, inith=400)
+    p.AttachUserArea(p.thumbnail_area, ids.THUMBNAILS)
+    p.GroupEnd(); p.GroupEnd()
+    p.GroupEnd()
+    p.GroupBegin(ids.ADJUST_GROUP, stretch, cols=1)
+    p.GroupBorderSpace(8, 6, 8, 10)
+    p.GroupSpace(6, 10)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="调整")
+    p.AddEditText(ids.LABEL, fit, initw=285)
+    p.GroupBegin(26, c4d.BFH_LEFT, cols=3)
+    add_action(p, ids.CONFIG_SAVE, "保存配置", "保存当前外观和平面设置；不改变原始分子数据")
+    add_action(p, ids.CONFIG_SAVE_AS, "另存为配置", "输入名称并保存为独立配置；同名自动加序号")
+    add_action(p, ids.RESET, "重置", "恢复默认外观和原始三维排布")
+    p.GroupEnd()
+    p.GroupBegin(35, fit, cols=4)
+    p.GroupSpace(6, 0)
+    add_icon(p, ids.BALL_STICK, "benzene_ball_stick.png", "球棍模式（恢复球棍比例）", toggle=True, size=22)
+    add_icon(p, ids.SPACE_FILL, "benzene_space_fill.png", "空间填充模式（按范德华半径放大）", toggle=True, size=22)
+    add_action(p, ids.STICK_MODE, "细棍", "细棍骨架模式（球径与键粗细接近）")
+    p.AddComboBox(ids.COLOR_PRESET, fit, initw=120)
+    for idx, (title, _spec) in enumerate(ids.COLOR_PRESETS):
+        p.AddChild(ids.COLOR_PRESET, idx, title)
+    p.GroupEnd()
+    p.AddCheckbox(ids.HYDROGENS, c4d.BFH_LEFT, 0, 0, "显示氢")
+    p.AddCheckbox(ids.MATERIAL_INHERIT, c4d.BFH_LEFT, 0, 0, "材质继承")
+
+    def number(identifier, slider, label):
+        p.GroupBegin(0, fit, cols=4)
+        p.AddStaticText(0, c4d.BFH_LEFT, name=label)
+        p.AddEditNumberArrows(identifier, c4d.BFH_LEFT, initw=68)
+        p.AddSlider(slider, fit, initw=130)
+        add_icon(p, ids.SLIDER_RESETS[slider], "reset.png",
+                 "恢复%s默认值" % label, size=16)
+        p.GroupEnd()
+
+    p.GroupBegin(31, fit, cols=1)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="原子外观")
+    p.GroupBorderSpace(0, 8, 0, 0); p.GroupSpace(6, 6)
+    number(ids.ATOM_RADIUS, ids.ATOM_SLIDER, "大小")
+    number(ids.SPHERE_SEGMENTS, ids.SPHERE_SLIDER, "分段")
+    p.GroupBegin(18, c4d.BFH_LEFT, cols=3)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="颜色")
+    p.AddComboBox(ids.ELEMENT, c4d.BFH_LEFT, initw=58)
+    for index, element in enumerate(p.available_elements): p.AddChild(ids.ELEMENT, index, element)
+    p.AddColorField(ids.ELEMENT_COLOR, c4d.BFH_LEFT, initw=190, inith=20)
+    p.GroupEnd()
+    p.GroupBegin(34, fit, cols=5)
+    p.AddComboBox(ids.SIZE_ELEMENT, c4d.BFH_LEFT, initw=58)
+    for index, element in enumerate(p.available_elements): p.AddChild(ids.SIZE_ELEMENT, index, element)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="缩放")
+    p.AddEditNumberArrows(ids.ELEMENT_SIZE, c4d.BFH_LEFT, initw=68)
+    p.AddSlider(ids.ELEMENT_SIZE_SLIDER, fit, initw=130)
+    add_icon(p, ids.SLIDER_RESETS[ids.ELEMENT_SIZE_SLIDER], "reset.png",
+             "恢复当前元素的默认缩放", size=16)
+    p.GroupEnd()
+    p.GroupEnd()
+    p.GroupBegin(32, fit, cols=1)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="化学键外观")
+    p.GroupBorderSpace(0, 8, 0, 0); p.GroupSpace(6, 6)
+    number(ids.BOND_RADIUS, ids.BOND_SLIDER, "粗细")
+    number(ids.CYLINDER_SEGMENTS, ids.CYLINDER_SLIDER, "分段")
+    p.AddCheckbox(ids.BOND_CAPS, c4d.BFH_LEFT, 0, 0, "封顶")
+    p.AddCheckbox(ids.BOND_MODE, c4d.BFH_LEFT, 0, 0, "显示双键／三键")
+    number(ids.SPACING, ids.SPACING_SLIDER, "间距")
+    p.AddCheckbox(ids.BOND_MATERIAL, c4d.BFH_LEFT, 0, 0, "统一键色")
+    p.GroupBegin(19, c4d.BFH_LEFT, cols=3)
+    p.AddStaticText(0, c4d.BFH_LEFT, name="颜色")
+    p.AddComboBox(ids.BOND_ELEMENT, c4d.BFH_LEFT, initw=58)
+    for index, element in enumerate(p.available_elements): p.AddChild(ids.BOND_ELEMENT, index, element)
+    p.AddColorField(ids.BOND_COLOR, c4d.BFH_LEFT, initw=190, inith=20)
+    p.GroupEnd(); p.GroupEnd()
+    p.GroupBegin(33, c4d.BFH_LEFT, cols=2)
+    p.GroupSpace(6, 0)
+    add_action(p, ids.FINISH, "完成", "保留当前预览并结束联动；下次选择结构创建新的预览")
+    add_action(p, ids.REBIND_ACTIVE, "接管所选", "重新绑定对象管理器中选中的 SciMol 分子，继续实时调整")
+    p.GroupEnd()
+    p.AddStaticText(ids.SELECTED, fit, name="选择一个结构")
+    p.AddStaticText(ids.WARNING, fit, name="")
+    p.GroupEnd()
+    p.editor = AtomSelectionPanel(p._apply_flatten, p._restore_3d,
+                                  p._select_model_atoms, p._apply_plane_groups,
+                                  p._apply_local_appearance,
+                                  p._apply_orientation, p._details_closed)
+    p.GroupEnd()
+    p.GroupBegin(25, fit, cols=3)
+    p.GroupBorderSpace(10, 4, 10, 6)
+    p.AddStaticText(ids.STATUS, fit, name="正在加载结构…")
+    add_action(p, ids.CANCEL, "取消", "取消当前结构处理")
+    p.details_control = add_action(p, ids.RIGHT_TOGGLE, "结构详情", "打开／关闭独立的平面编辑窗口；蓝色表示已打开", True)
+    p.GroupEnd()
+    return True

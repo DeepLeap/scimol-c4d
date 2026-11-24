@@ -1,0 +1,14 @@
+{
+  "project": "Lucide",
+  "icon": "rotate-ccw",
+  "license": "ISC",
+  "commit": "fbaccc7d9fa001ecb7b14c3a6f7865655cc7c711",
+  "source_url": "https://github.com/lucide-icons/lucide/blob/fbaccc7d9fa001ecb7b14c3a6f7865655cc7c711/icons/rotate-ccw.svg",
+  "license_url": "https://github.com/lucide-icons/lucide/blob/fbaccc7d9fa001ecb7b14c3a6f7865655cc7c711/LICENSE",
+  "display_color": "#9ba0a6",
+  "output": "reset.png",
+  "output_size": [
+    16,
+    16
+  ]
+}

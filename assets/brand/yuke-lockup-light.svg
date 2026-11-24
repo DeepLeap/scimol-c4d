@@ -1,0 +1,17 @@
+<svg id="yuke-lockup-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 64" role="img" aria-label="与可 | YUKE 浅底组合标志">
+  <g id="layer-icon">
+    <g id="layer-primary" fill="#111827">
+      <path id="layer-trunk" d="M 22.50 39.25 H 30.50 V 56.00 H 22.50 Z"/>
+      <path id="layer-culm" d="M 22.50 36.75 V 32.00 A 42.0 42.0 0 0 0 14.10 6.80 L 20.10 11.20 A 26.0 26.0 0 0 1 30.50 32.00 V 36.75 Z"/>
+      <path id="layer-arm" d="M 33.00 21.55 L 40.82 8.00 H 49.60 L 33.00 36.75 Z"/>
+    </g>
+    <g id="layer-accent" fill="#0F766E">
+      <path id="layer-leaf" d="M 33.00 39.25 A 26.0 26.0 0 0 1 49.60 57.20 A 42.0 42.0 0 0 1 33.00 39.25 Z"/>
+    </g>
+  </g>
+  <g id="layer-wordmark">
+    <text x="64" y="32" dominant-baseline="central" fill="#111827" font-family="'Source Han Sans SC', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="600" letter-spacing="0.08em">与可</text>
+    <line x1="136.75" y1="21" x2="136.75" y2="43" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="152" y="32" dominant-baseline="central" fill="#475569" font-family="'Geist', 'Geist Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="500" letter-spacing="0.16em">YUKE</text>
+  </g>
+</svg>
