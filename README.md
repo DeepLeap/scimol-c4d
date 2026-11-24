@@ -1,54 +1,36 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/yuke-lockup-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/yuke-lockup-light.svg">
-  <img alt="与可 | YUKE" src="./assets/brand/yuke-lockup-light.svg" height="48">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/scimol-hero-zh-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/scimol-hero-zh-light.svg">
+  <img alt="SciMol C4D by 与可 | YUKE" src="./assets/brand/scimol-hero-zh-light.svg" width="100%">
 </picture>
 
-# SciMol C4D
-
-**Cinema 4D 科研化学分子生成插件**
-
-支持名称 / 分子式 / SMILES 搜索与 ChemDraw 复制导入，一键生成精美三维分子模型
-
 <p>
-  <img src="https://img.shields.io/badge/Cinema_4D-2025.3%2B_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
-  <img src="https://img.shields.io/badge/Redshift-Standard_%E6%9D%90%E8%B4%A8-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Redshift" />
-  <img src="https://img.shields.io/badge/ChemDraw-%E5%A4%8D%E5%88%B6_%C2%B7_%E5%AF%BC%E5%85%A5-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
-  <img src="https://img.shields.io/badge/RDKit-%E5%8C%96%E5%AD%A6%E5%BC%95%E6%93%8E-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="RDKit" />
-  <img src="https://img.shields.io/badge/License-MIT-111827?style=flat-square&labelColor=111827&color=94A3B8" alt="MIT" />
-</p>
-
-<p>
-  <b>简体中文</b> | <a href="./README.en.md">English</a>
+  <b>简体中文</b> · <a href="./README.en.md">English</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#安装指南">AI 一键安装</a> · <a href="#核心亮点">核心亮点</a> · <a href="#快速上手">ChemDraw 联动</a> · <a href="#目录说明">目录说明</a>
 </p>
 
 </div>
 
----
-
-## 简介
-
-**SciMol C4D** 是一款专为**学术期刊封面（Cover Art）、TOC 摘要图、论文插图与科研机理动画**打造的 Cinema 4D 化学分子建模插件。
-
-无需在多个软件之间来回导出 OBJ/FBX、也无需手动重绑材质——在插件内搜索分子或直接从 ChemDraw 复制结构，即可在 Cinema 4D 中一键生成比例精准、自带 **Redshift Standard 节点材质**的三维分子模型，并支持所见即所得的实时调参。
+专为**学术期刊封面（Cover Art）、TOC 摘要图、论文插图与科研机理动画**打造：免去跨软件导出 OBJ/FBX 与手动贴材质，直接在 Cinema 4D 内搜索或从 ChemDraw 粘贴结构，一键生成精准三维分子与 **Redshift Standard 节点材质**。
 
 ## 核心亮点
 
-1. **无缝衔接 ChemDraw**：在 ChemDraw 中选中结构复制为 SMILES 直接粘贴即可生成；也支持直接导入 `.cdxml`、`.mol`、`.sdf` 结构文件。
-2. **中英文 / 分子式 / SMILES 一框即搜**：内置 81 个常见科研分子与溶剂缩写（如 `THF`、`DMSO`、`DMF`、`阿司匹林`）离线词库，自动识别下标分子式（如 `C₆H₁₂O₆`）并支持联动 PubChem 在线检索。
-3. **一键生成精美三维模型与 Redshift 材质**：支持球棍、空间填充、细棍骨架三种模式切换；自动构建原子与双色分割化学键独立材质，内置 **经典 CPK、Nature 银灰学术、Science 冷调晶体、明快白底插图、与可竹青** 5 套科研配色预设，多材质批量改色支持单步撤销。
-4. **所见即所得实时调参**：单击缩略图即生成预览，切换分子自动替换当前预览不堆冗余模型；滑块实时调节原子大小、键粗细、多键间距、氢显示与元素单独缩放，满意后点击「完成」定稿，并可通过「接管所选」重新联动场景模型。
-5. **实用附带工具**：提供本地常用记录、自定义收藏夹与外观预设保存；点击右下角「结构详情」可展开二维结构视图，辅助完成单原子/单键局部尺寸微调与分子骨架拍平。
-
----
+| 能力 | 说明 |
+| :--- | :--- |
+| **ChemDraw 联动** | 支持在 ChemDraw 中选中分子按 `Ctrl+Alt+C` 复制为 SMILES 直接粘贴生成，或一键导入 `.cdxml` / `.mol` / `.sdf` 文件 |
+| **统一智能搜索** | 中英文名、分子式（支持下标 `C₆H₁₂O₆`）、SMILES 一框自动识别；内置 81 词离线常用词库并联动 PubChem 在线检索 |
+| **一键精美材质** | 球棍 / 空间填充 / 细棍骨架三模式切换；自动构建原子与双色化学键独立 Redshift 材质，自带 5 套科研配色预设（含单步撤销） |
+| **丝滑实时调参** | 单击缩略图生成实时预览，切换分子自动替换当前预览不堆冗余；支持原子大小、键粗细、间距、氢显示及单元素缩放即时联动 |
+| **实用附带工具** | 常用记录、自定义收藏夹与预设保存；右下角「结构详情」提供二维原子/环点选、单原子/单键微调与骨架拍平辅助 |
 
 ## 安装指南
 
 ### 方式一：复制给任何 AI 自动安装（推荐）
 
-如果你正在使用 **Cursor、Claude Code、Codex、Trae、Windsurf、Antigravity** 或其他支持终端命令的 AI 助手，直接点击下方代码块右上角的复制按钮，把整段提示词发给它即可自动完成下载、依赖配置与 C4D 菜单挂载：
+如果你正在使用 **Cursor、Claude Code、Codex、Trae、Windsurf、Antigravity** 或其他支持终端命令的 AI 助手，点击下方代码块右上角的复制按钮，发给它即可自动完成下载、依赖配置与 C4D 菜单挂载：
 
 ````text
 请帮我在当前 Windows 电脑上自动安装并配置 Cinema 4D 插件「SciMol C4D」（仓库：https://github.com/DeepLeap/scimol-c4d）：
@@ -60,49 +42,39 @@
 
 ### 方式二：手动安装（3 步完成）
 
-1. **下载项目到独立目录**
+1. **下载到独立固定目录**（如 `D:\Plugins\scimol-c4d` 或 `%APPDATA%\Maxon\SciMol-C4D`，**不要**把完整仓库直接放进 C4D 的 `library\scripts`）
    ```bash
    git clone https://github.com/DeepLeap/scimol-c4d.git
    ```
-   > [!TIP]
-   > 建议将项目放在固定目录（例如 `D:\Plugins\scimol-c4d` 或 `%APPDATA%\Maxon\SciMol-C4D`），**不要**把整个仓库直接放进 C4D 的 `library\scripts` 目录。
-
-2. **一键配置环境并注册菜单**（需提前安装 64 位 Python 3.10~3.13）
-   在项目根目录打开 PowerShell 运行：
+2. **初始化化学环境并挂载 C4D 菜单**（需已安装 64 位 Python 3.10~3.13；不改动 C4D 内置 Python，默认源较慢时自动切换清华镜像源）
    ```powershell
    powershell -ExecutionPolicy Bypass -File .\安装运行环境.ps1 -RegisterC4D
    ```
-   脚本会自动在项目本地创建 `.runtime/` 独立虚拟环境并安装 RDKit（**不会改动 C4D 内置 Python**，若默认源较慢会自动切换国内清华镜像源），随后将轻量化启动脚本与图标挂载进本机 Cinema 4D 的用户脚本目录。
-
-3. **在 Cinema 4D 中启动**
-   打开或重启 Cinema 4D，点击顶部菜单 **扩展 (Extensions) → 用户脚本 (User Scripts) → 分子球棍生成器** 即可启动；也可在「自定义命令」中将其拖到工具栏固定为图标按钮，或在「脚本管理器」中直接打开运行 `分子球棍生成器.py`。
-
----
+3. **启动插件**：打开或重启 Cinema 4D，点击顶部菜单 **扩展 (Extensions) → 用户脚本 (User Scripts) → 分子球棍生成器**；也可在「脚本管理器」直接运行 `分子球棍生成器.py`。
 
 ## 快速上手
 
-```
+```text
 搜索或 ChemDraw 粘贴/导入 → 单击缩略图生成预览 → 调参 / 科研配色 → 点击「完成」定稿
                                    ↑                                      ↓
                                    └────────── 继续点击替换同一预览 ────────┘
 ```
 
-- **ChemDraw 快捷联动**：在 ChemDraw 中选中目标分子，按 `Ctrl+Alt+C`（或菜单 `Edit → Copy As → SMILES`），回到插件点击搜索框旁的「粘贴」按钮，即可立刻生成三维结构。
-- **材质共享与撤销**：默认开启「材质继承」，同一元素材质可跨分子共享；切换科研配色方案后可直接用 C4D 原生 `Ctrl+Z` 单步撤回。
-
----
+- **ChemDraw 快捷键**：选中结构按 `Ctrl+Alt+C`（`Edit → Copy As → SMILES`），回到插件点击「粘贴」即刻生成。
+- **材质共享与撤销**：默认开启「材质继承」，同元素材质可跨分子共享；切换科研配色后支持 `Ctrl+Z` 单步撤回。
+- **二次接管模型**：点击「完成」冻结后，仍可通过「接管所选」重新绑定场景中未手工拆改的分子继续调参。
 
 ## 目录说明
 
 ```text
 scimol-c4d/
-├── 分子球棍生成器.py     # C4D 入口脚本（在脚本管理器或用户脚本菜单中调用）
-├── 安装运行环境.ps1      # 一键初始化本地 .runtime 化学环境并注册 C4D 菜单
-├── requirements.txt      # 本地化学引擎依赖（rdkit / Pillow / numpy）
-├── 脚本信息.json         # 插件名称、版本与基础元数据
+├── 分子球棍生成器.py     # C4D 入口脚本
+├── 安装运行环境.ps1      # 一键初始化本地 .runtime 化学环境并注册 C4D 用户脚本菜单
+├── requirements.txt      # 化学引擎依赖（rdkit / Pillow / numpy）
+├── 脚本信息.json         # 插件基础元数据
 ├── 界面图标.png / 图标.png # 菜单栏与展示图标
-├── scimol_c4d/           # 插件核心源码（化学后台、三维建模、原生 UI 与浮窗交互）
-├── assets/               # 界面按钮图标与「与可 | YUKE」品牌视觉资源
+├── scimol_c4d/           # 核心模块（化学后台、三维建模、原生 UI 与浮窗交互）
+├── assets/               # 界面图标与「与可 | YUKE」品牌矢量资产
 └── 测试/                 # 本地单元测试（验证本地.py）与 C4D 宿主验收脚本
 ```
 
@@ -110,27 +82,21 @@ scimol-c4d/
 
 | 项目 | 说明 |
 | :--- | :--- |
-| **Cinema 4D** | 2025.3+ ~ 2027（已在 2027.0.0 完整验证） |
-| **渲染器** | Redshift（自动构建 Standard 节点材质） |
-| **操作系统** | Windows（需安装 64 位 Python 3.10~3.13 用于本地 RDKit 后台） |
-| **支持范围** | 单个共价连接分子，最多 300 个原子（含氢）；不支持盐、晶体晶胞、蛋白质大分子及图片 OCR 识别 |
+| **Cinema 4D & 渲染器** | Cinema 4D 2025.3+ ~ 2027（已在 2027.0.0 实测验证）· Redshift Standard 节点材质 |
+| **系统与运行环境** | Windows · 本机安装 64 位 Python 3.10~3.13（仅用于隔离运行项目本地 `.runtime` 中的 RDKit） |
+| **支持范围** | 单个共价连接分子，最多 300 个原子（含氢）；暂不支持盐、晶体晶胞、蛋白质大分子及图片 OCR 识图 |
 
 <details>
 <summary>开发者自检命令</summary>
 
 ```powershell
-# 运行全量本地单元测试、Python 3.11 AST 语法检查与资源完整性校验
 .\.runtime\Scripts\python.exe 测试\验证本地.py
 ```
 
 </details>
 
-## 许可证
-
-[MIT](./LICENSE) © 2026 [YUKE (DeepLeap)](https://github.com/DeepLeap)
-
 ---
 
 <div align="center">
-  <sub>由 <b>与可 | YUKE</b> 设计开发 · <a href="https://github.com/DeepLeap">DeepLeap</a></sub>
+  <sub><a href="./LICENSE">MIT License</a> © 2026 <a href="https://github.com/DeepLeap">YUKE (DeepLeap)</a> · 与可科研可视化</sub>
 </div>
