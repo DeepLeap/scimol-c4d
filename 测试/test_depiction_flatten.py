@@ -13,6 +13,7 @@ from scimol_c4d import chemistry_worker, display_geometry
 from scimol_c4d.hydrogen_layout import collision_score
 
 
+FIXTURES = Path(__file__).resolve().parent / "fixtures"
 OUTPUT = Path(__file__).resolve().parent / "输出"
 
 
@@ -51,7 +52,10 @@ def external_components(record, selected):
 class DepictionFlattenTests(unittest.TestCase):
     @staticmethod
     def fixture(name):
-        return json.loads((OUTPUT / name).read_text(encoding="utf-8"))
+        path = FIXTURES / name
+        if not path.is_file():
+            path = OUTPUT / name
+        return json.loads(path.read_text(encoding="utf-8"))
 
     def assert_depiction_layout(self, record, result):
         heavy = [atom["id"] for atom in record["atoms"] if atom["element"] != "H"]

@@ -10,8 +10,10 @@ from scimol_c4d.display_geometry import orient_display_positions, ring_center_op
 
 class RingPriorityTests(unittest.TestCase):
     def test_caffeine_auto_centers_six_membered_ring(self):
-        fixtures = json.loads((Path(__file__).parent / "输出" / "常用结构.json")
-                              .read_text(encoding="utf-8"))
+        fixture_path = Path(__file__).parent / "fixtures" / "常用结构.json"
+        if not fixture_path.is_file():
+            fixture_path = Path(__file__).parent / "输出" / "常用结构.json"
+        fixtures = json.loads(fixture_path.read_text(encoding="utf-8"))
         record = next(item for item in fixtures if item["name"] == "咖啡因")
         # The saved chemical graph has placeholder coordinates; its molblock
         # supplies the corresponding generated 2D geometry for this test.

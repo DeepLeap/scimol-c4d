@@ -12,9 +12,7 @@ from rdkit import Chem
 
 
 ROOT = Path(__file__).resolve().parents[1]
-_EXTERNAL_SAMPLE = ROOT.parents[1] / "分子式插件" / "untitled.cdxml"
-_LOCAL_SAMPLE = ROOT / "测试" / "fixtures" / "benzyl_alcohol.cdxml"
-SAMPLE = _EXTERNAL_SAMPLE if _EXTERNAL_SAMPLE.is_file() else _LOCAL_SAMPLE
+SAMPLE = ROOT / "测试" / "fixtures" / "benzyl_alcohol.cdxml"
 spec = importlib.util.spec_from_file_location(
     "chemistry_worker_for_atom_mapping", ROOT / "scimol_c4d" / "chemistry_worker.py")
 worker = importlib.util.module_from_spec(spec)

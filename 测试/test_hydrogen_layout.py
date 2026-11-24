@@ -10,7 +10,10 @@ from scimol_c4d import hydrogen_layout as layout
 from scimol_c4d.display_geometry import flatten_overrides
 
 
-FIXTURE = Path(__file__).resolve().parent / "输出" / "当前拍平案例.json"
+_FIXTURES = Path(__file__).resolve().parent / "fixtures"
+FIXTURE = _FIXTURES / "当前拍平案例.json"
+if not FIXTURE.is_file():
+    FIXTURE = Path(__file__).resolve().parent / "输出" / "当前拍平案例.json"
 
 
 def molecule(elements, bonds):

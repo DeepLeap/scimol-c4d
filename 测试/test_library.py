@@ -82,7 +82,13 @@ class LibraryTests(unittest.TestCase):
             validate_record(record)
 
     def test_backend_replaces_cancelled_request(self):
+        import scimol_c4d.backend as backend_mod
         backend = Backend()
+        ctx_patch = patch.object(backend_mod, "PYTHON", Path(sys.executable)) if not backend_mod.PYTHON.is_file() else None
+        if ctx_patch is not None:
+            ctx_patch.start()
+            self.addCleanup(ctx_patch.stop)
+        self.addCleanup(backend.close)
         backend.submit({"action": "builtin"}, "old")
         token = backend.submit({"action": "resolve", "kind": "name", "text": "二甲苯"}, "new")
         result_token, context, result, elapsed = backend.results.get(timeout=15)

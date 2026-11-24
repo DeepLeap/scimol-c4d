@@ -1,0 +1,2068 @@
+[
+  {
+    "schema_version": 1,
+    "name": "水",
+    "formula": "H2O",
+    "smiles": "O",
+    "structure_key": "c4694f2e93d5c4e7d51f9c5deb75e6cc8be5e1114178c6a45b6fc2c566a0aa8c",
+    "source": {
+      "kind": "builtin",
+      "alias": "水",
+      "name": "水"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        202.10973333333334,
+        132.92
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  1  0  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\nM  END\n",
+    "record_integrity": "af1f6aeadadb9db49e35aae4b2c3a3e04af99ab2b637fb7fa331a9e538408b6c"
+  },
+  {
+    "schema_version": 1,
+    "name": "甲醇",
+    "formula": "CH4O",
+    "smiles": "CO",
+    "structure_key": "fc8842c641d9150647f928e6c294ce26dd51ecae5ba30b114a78ddedcd398815",
+    "source": {
+      "kind": "builtin",
+      "alias": "甲醇",
+      "name": "甲醇"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        44.14354786197407,
+        139.77999999999997
+      ],
+      "1": [
+        276.2884521380259,
+        139.78
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  2  1  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\nM  END\n",
+    "record_integrity": "f64ab505cacfd81feba9c2b842c48234c26e6491dfc6830d1ee43bf2910ddf1c"
+  },
+  {
+    "schema_version": 1,
+    "name": "乙醇",
+    "formula": "C2H6O",
+    "smiles": "CCO",
+    "structure_key": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+    "source": {
+      "kind": "builtin",
+      "alias": "乙醇",
+      "name": "乙醇"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": false
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        28.342066592625116,
+        170.6887254759213
+      ],
+      "1": [
+        160.216,
+        94.55127452407865
+      ],
+      "2": [
+        292.08993340737493,
+        170.6887254759214
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5981   -0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+    "record_integrity": "798eed0c818551bf52e7654be18c972167e1698681b9cacee8a757cc7b55877b"
+  },
+  {
+    "schema_version": 1,
+    "name": "丙酮",
+    "formula": "C3H6O",
+    "smiles": "CC(C)=O",
+    "structure_key": "de84a3a5e7d86fb53fe767b079b6e324b7f486e3ee690b86b06fd5d7231fb01c",
+    "source": {
+      "kind": "builtin",
+      "alias": "丙酮",
+      "name": "丙酮"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "order": 2.0,
+        "aromatic": false
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        47.186951220984355,
+        262.1794741966894
+      ],
+      "1": [
+        180.0,
+        185.49982473222977
+      ],
+      "2": [
+        312.8130487790156,
+        262.1794741966894
+      ],
+      "3": [
+        180.0,
+        32.140525803310595
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  4  3  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5981   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    2.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  2  4  2  0\nM  END\n",
+    "record_integrity": "aa018491e86ac4445d9e3e82039293cdec8f70e5cf1eb4eb46eb34bd4f03b796"
+  },
+  {
+    "schema_version": 1,
+    "name": "乙酸",
+    "formula": "C2H4O2",
+    "smiles": "CC(=O)O",
+    "structure_key": "b00014bedbaba3c96c5a7a9a3e5b442e4866a65e4668060e94657318f994bd8a",
+    "source": {
+      "kind": "builtin",
+      "alias": "乙酸",
+      "name": "乙酸"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 2.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "order": 1.0,
+        "aromatic": false
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        51.633570608846014,
+        245.3194237212419
+      ],
+      "1": [
+        173.5,
+        174.95980790708063
+      ],
+      "2": [
+        295.36642939115393,
+        245.31942372124195
+      ],
+      "3": [
+        173.5,
+        34.24057627875809
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  4  3  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    2.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5981   -0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  2  0\n  2  4  1  0\nM  END\n",
+    "record_integrity": "fe6b6cca06b2295881c9133856f4e479d2b0abf407753f48aa394b542666fe33"
+  },
+  {
+    "schema_version": 1,
+    "name": "苯",
+    "formula": "C6H6",
+    "smiles": "c1ccccc1",
+    "structure_key": "13cad05ca8f49c509e5b7be8c67668484344ebf2b2d12b03b295f14d4b1c32d1",
+    "source": {
+      "kind": "builtin",
+      "alias": "苯",
+      "name": "苯"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "order": 2.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        325.4922678357857,
+        140.0
+      ],
+      "1": [
+        252.7461339178927,
+        266.0
+      ],
+      "2": [
+        107.2538660821071,
+        266.0
+      ],
+      "3": [
+        34.50773216421433,
+        140.0
+      ],
+      "4": [
+        107.2538660821072,
+        14.0
+      ],
+      "5": [
+        252.74613391789285,
+        14.000000000000043
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  6  6  0  0  0  0  0  0  0  0999 V2000\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  2  0\n  3  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  1  2  0\nM  END\n",
+    "record_integrity": "758e03f7535a6d244feab4e346e02dd1aed16520175643116e1d195ea52d6cbb"
+  },
+  {
+    "schema_version": 1,
+    "name": "苯酚",
+    "formula": "C6H6O",
+    "smiles": "Oc1ccccc1",
+    "structure_key": "82b0491cd46906e019a1b589ed783ef4e293fc4e9c0626cf5afd843d80b26c9c",
+    "source": {
+      "kind": "builtin",
+      "alias": "苯酚",
+      "name": "苯酚"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        304.24605380954625,
+        139.99999999999997
+      ],
+      "1": [
+        208.8307025396975,
+        140.0
+      ],
+      "2": [
+        161.12302690477307,
+        222.63211811070482
+      ],
+      "3": [
+        65.70767563492433,
+        222.63211811070477
+      ],
+      "4": [
+        18.0,
+        139.99999999999997
+      ],
+      "5": [
+        65.7076756349244,
+        57.36788188929516
+      ],
+      "6": [
+        161.12302690477316,
+        57.36788188929518
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  7  7  0  0  0  0  0  0  0  0999 V2000\n    3.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  2  0\n  3  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  2  0\n  7  2  1  0\nM  END\n",
+    "record_integrity": "5e50869c0090bb84ce2815a6326fc44476561255e7262e9edc70dedf4184afd6"
+  },
+  {
+    "schema_version": 1,
+    "name": "苄醇",
+    "formula": "C7H8O",
+    "smiles": "OCc1ccccc1",
+    "structure_key": "3f5d5a797945beb3a414f6f86e77ba164c6e34a04fd4f70eb599ed1ee8b2d9e4",
+    "source": {
+      "kind": "builtin",
+      "alias": "苄醇",
+      "name": "苄醇"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 7,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        51.064606003005736,
+        116.20161973309145
+      ],
+      "1": [
+        105.80574098761552,
+        175.5080233952109
+      ],
+      "2": [
+        184.53716065841033,
+        157.75401169760545
+      ],
+      "3": [
+        208.52744534459538,
+        80.6935963378805
+      ],
+      "4": [
+        287.2588650153902,
+        62.9395846402751
+      ],
+      "5": [
+        342.0,
+        122.24598830239457
+      ],
+      "6": [
+        318.0097153138149,
+        199.30640366211946
+      ],
+      "7": [
+        239.27829564302013,
+        217.0604153597249
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  8  8  0  0  0  0  0  0  0  0999 V2000\n    3.7500   -1.2990    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  8  3  1  0\nM  END\n",
+    "record_integrity": "3d4687fed0ba406de4ced3f324b4e792f0262e64f61885e6c6df539eb5134998"
+  },
+  {
+    "schema_version": 1,
+    "name": "阿司匹林",
+    "formula": "C9H8O4",
+    "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "structure_key": "56de9fefcf1645df78a35f02ff437bcf080afd064ee8d85dd7e9a2c5c5e7b6db",
+    "source": {
+      "kind": "builtin",
+      "alias": "阿司匹林",
+      "name": "阿司匹林"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 8,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 9,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 10,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 11,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 12,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 2.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 9,
+        "b": 10,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "order": 2.0,
+        "aromatic": false
+      },
+      {
+        "a": 10,
+        "b": 12,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 9,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        22.87360590751615,
+        194.02560362525304
+      ],
+      "1": [
+        72.74463395405297,
+        149.01920271893982
+      ],
+      "2": [
+        58.7034614595471,
+        83.32642506463601
+      ],
+      "3": [
+        136.65683449509567,
+        169.70557946693032
+      ],
+      "4": [
+        186.52786254163246,
+        124.69917856061704
+      ],
+      "5": [
+        172.48669004712664,
+        59.00640090631324
+      ],
+      "6": [
+        222.35771809366346,
+        14.000000000000014
+      ],
+      "7": [
+        286.26991863470613,
+        34.68637674799052
+      ],
+      "8": [
+        300.311091129212,
+        100.3791544022943
+      ],
+      "9": [
+        250.44006308267515,
+        145.38555530860754
+      ],
+      "10": [
+        264.481235577181,
+        211.0783329629113
+      ],
+      "11": [
+        328.3934361182237,
+        231.7647097109018
+      ],
+      "12": [
+        214.61020753064417,
+        256.0847338692245
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n 13 13  0  0  0  0  0  0  0  0999 V2000\n    5.2500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0000   -2.5981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    3.8971    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0000    2.5981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  2  0\n  2  4  1  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  8  9  1  0\n  9 10  2  0\n 10 11  1  0\n 11 12  2  0\n 11 13  1  0\n 10  5  1  0\nM  END\n",
+    "record_integrity": "20a4056d9c617438973cfb3ac72a1bda30f5b28cff58056507c4e4ebc916d1c4"
+  },
+  {
+    "schema_version": 1,
+    "name": "咖啡因",
+    "formula": "C8H10N4O2",
+    "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+    "structure_key": "693364cb16a9ea2db2493781a03775786357480fccd518a3e02a6df57493fcf4",
+    "source": {
+      "kind": "builtin",
+      "alias": "咖啡因",
+      "name": "咖啡因"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 8,
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 9,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 10,
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 11,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 12,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 13,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2.0,
+        "aromatic": false
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 5,
+        "b": 10,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 10,
+        "b": 12,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 12,
+        "b": 13,
+        "order": 2.0,
+        "aromatic": false
+      },
+      {
+        "a": 12,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 8,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        278.61272140190727,
+        44.23217724693192
+      ],
+      "1": [
+        237.53477291625717,
+        94.43842021534029
+      ],
+      "2": [
+        173.51591683421657,
+        83.96699477562302
+      ],
+      "3": [
+        150.57500923782607,
+        23.289326367497313
+      ],
+      "4": [
+        132.4379683485665,
+        134.17323774403138
+      ],
+      "5": [
+        155.37887594495697,
+        194.85090615215705
+      ],
+      "6": [
+        104.76011432548249,
+        235.4194365285879
+      ],
+      "7": [
+        50.53509157982808,
+        199.8144987667291
+      ],
+      "8": [
+        67.64094610175204,
+        137.24090668614485
+      ],
+      "9": [
+        27.072415725321207,
+        86.62214506667038
+      ],
+      "10": [
+        219.39773202699752,
+        205.32233159187433
+      ],
+      "11": [
+        242.33863962338796,
+        266.0
+      ],
+      "12": [
+        260.47568051264767,
+        155.11608862346594
+      ],
+      "13": [
+        324.49453659468816,
+        165.58751406318325
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n 14 15  0  0  0  0  0  0  0  0999 V2000\n   -2.9499    4.2246    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8351    3.2209    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1470    1.7537    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5736    1.2902    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2760    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323   -0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.2458   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7062    2.6807    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.1328    3.1443    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4086    3.6844    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.0967    5.1517    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  3  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  8  9  1  0\n  9 10  1  0\n  6 11  1  0\n 11 12  1  0\n 11 13  1  0\n 13 14  2  0\n 13  2  1  0\n  9  5  1  0\nM  END\n",
+    "record_integrity": "5cc1d0d64fe71cd2f162da76fdd4579ba5f3c3650702ff6c72ef88470d3d2544"
+  },
+  {
+    "schema_version": 1,
+    "name": "邻二甲苯",
+    "formula": "C8H10",
+    "smiles": "Cc1ccccc1C",
+    "structure_key": "c1b43fb4f5dfe0829d743c7563054fdcb58caae516dc58fc520d33a077c5ab7a",
+    "source": {
+      "kind": "builtin",
+      "alias": "邻二甲苯",
+      "name": "邻二甲苯"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 6,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        341.9999999999999,
+        264.7076581449591
+      ],
+      "1": [
+        233.99999999999997,
+        202.35382907247958
+      ],
+      "2": [
+        125.99999999999991,
+        264.7076581449591
+      ],
+      "3": [
+        18.0,
+        202.35382907247947
+      ],
+      "4": [
+        18.00000000000011,
+        77.64617092752039
+      ],
+      "5": [
+        126.0000000000001,
+        15.292341855040874
+      ],
+      "6": [
+        234.0,
+        77.64617092752047
+      ],
+      "7": [
+        342.0,
+        15.292341855040949
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  8  8  0  0  0  0  0  0  0  0999 V2000\n    3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  2  0\n  3  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  2  0\n  7  8  1  0\n  7  2  1  0\nM  END\n",
+    "record_integrity": "c6f75e8dc4d4cf7ad707ff5ec0a8a178736a3e2c9832f30336e50f859839f25f"
+  },
+  {
+    "schema_version": 1,
+    "name": "间二甲苯",
+    "formula": "C8H10",
+    "smiles": "Cc1cccc(C)c1",
+    "structure_key": "f666b55c117f3166015743b5a43fe2a5a4454f6ff3cd92337839766291e8f8e1",
+    "source": {
+      "kind": "builtin",
+      "alias": "间二甲苯",
+      "name": "间二甲苯"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 5,
+        "b": 7,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 7,
+        "b": 1,
+        "order": 2.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        18.0,
+        233.53074360871938
+      ],
+      "1": [
+        98.99999999999999,
+        186.7653718043597
+      ],
+      "2": [
+        99.00000000000004,
+        93.23462819564023
+      ],
+      "3": [
+        180.00000000000009,
+        46.46925639128058
+      ],
+      "4": [
+        261.0,
+        93.23462819564034
+      ],
+      "5": [
+        261.0,
+        186.76537180435975
+      ],
+      "6": [
+        342.0,
+        233.53074360871943
+      ],
+      "7": [
+        180.0,
+        233.53074360871943
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  8  8  0  0  0  0  0  0  0  0999 V2000\n    3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  6  8  1  0\n  8  2  2  0\nM  END\n",
+    "record_integrity": "3207b1899ec20cf599cfb88be32c5469bcc3b819aad8fb74e7c050a5ecf7801e"
+  },
+  {
+    "schema_version": 1,
+    "name": "对二甲苯",
+    "formula": "C8H10",
+    "smiles": "Cc1ccc(C)cc1",
+    "structure_key": "da8f08afbbddb678308f291c8a9a114f1c7765266a31db19521ca4de9bf4c8a1",
+    "source": {
+      "kind": "builtin",
+      "alias": "对二甲苯",
+      "name": "对二甲苯"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 3,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 4,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 5,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 6,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 7,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 4,
+        "b": 5,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 4,
+        "b": 6,
+        "order": 2.0,
+        "aromatic": true
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 1.0,
+        "aromatic": true
+      },
+      {
+        "a": 7,
+        "b": 1,
+        "order": 2.0,
+        "aromatic": true
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        342.0,
+        139.99999999999997
+      ],
+      "1": [
+        261.0,
+        140.0
+      ],
+      "2": [
+        220.49999999999994,
+        210.14805770653956
+      ],
+      "3": [
+        139.49999999999994,
+        210.1480577065395
+      ],
+      "4": [
+        99.0,
+        139.99999999999997
+      ],
+      "5": [
+        18.0,
+        139.99999999999994
+      ],
+      "6": [
+        139.50000000000003,
+        69.85194229346044
+      ],
+      "7": [
+        220.50000000000003,
+        69.85194229346045
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  8  8  0  0  0  0  0  0  0  0999 V2000\n    3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  1  0\n  5  7  2  0\n  7  8  1  0\n  8  2  2  0\nM  END\n",
+    "record_integrity": "2a26b7099f38b0a8b40a3f89935b224dcc4d250607357b8a014652df9307a1bf"
+  },
+  {
+    "schema_version": 1,
+    "name": "二甲醚",
+    "formula": "C2H6O",
+    "smiles": "COC",
+    "structure_key": "f04736a51b45f491bec35fb8de6c9921cd01cbd9677275af05d267ab713bad79",
+    "source": {
+      "kind": "builtin",
+      "alias": "二甲醚",
+      "name": "二甲醚"
+    },
+    "stereo_status": "none",
+    "warnings": [],
+    "atoms": [
+      {
+        "id": 0,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 1,
+        "element": "O",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      },
+      {
+        "id": 2,
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "charge": 0,
+        "isotope": 0
+      }
+    ],
+    "bonds": [
+      {
+        "a": 0,
+        "b": 1,
+        "order": 1.0,
+        "aromatic": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1.0,
+        "aromatic": false
+      }
+    ],
+    "has_3d": false,
+    "coordinates_ready": false,
+    "thumbnail": "",
+    "thumbnail_atom_positions": {
+      "0": [
+        18.0,
+        193.92537180435966
+      ],
+      "1": [
+        180.0,
+        100.3946281956403
+      ],
+      "2": [
+        342.0,
+        193.9253718043597
+      ]
+    },
+    "thumbnail_size": [
+      360,
+      280
+    ],
+    "molblock": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5981   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+    "record_integrity": "ef69ebfd6210d439315d767920f33bf4df36179af2494ed961011fb0b8f68149"
+  }
+]

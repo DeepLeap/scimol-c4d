@@ -1,4 +1,4 @@
-"""Run from Cinema 4D Script Manager or the workspace AI plugin center.
+"""SciMol C4D entry script — run from Cinema 4D Script Manager or User Scripts menu.
 
 Author: 与可 | YUKE (DeepLeap)
 Repository: https://github.com/DeepLeap/scimol-c4d

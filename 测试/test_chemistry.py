@@ -17,9 +17,8 @@ spec = importlib.util.spec_from_file_location("chemistry_worker", WORKER_PATH)
 worker = importlib.util.module_from_spec(spec)
 assert spec and spec.loader
 spec.loader.exec_module(worker)
-_EXTERNAL_SAMPLE = ROOT.parents[1] / "分子式插件" / "untitled.cdxml"
 _LOCAL_SAMPLE = ROOT / "测试" / "fixtures" / "benzyl_alcohol.cdxml"
-SAMPLE = _EXTERNAL_SAMPLE if _EXTERNAL_SAMPLE.is_file() else _LOCAL_SAMPLE
+SAMPLE = _LOCAL_SAMPLE
 
 
 class ChemistryWorkerTests(unittest.TestCase):

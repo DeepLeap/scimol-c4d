@@ -19,6 +19,13 @@ WORKER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(WORKER)
 
 
+def _load_fixture(name):
+    path = ROOT / "测试" / "fixtures" / name
+    if not path.is_file():
+        path = ROOT / "测试" / "输出" / name
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def position(record, atom_id):
     atom = record["atoms"][atom_id]
     return [atom[axis] for axis in ("x", "y", "z")]
@@ -51,8 +58,7 @@ class DisplayGeometryTests(unittest.TestCase):
         cls.temp.cleanup()
 
     def test_cholesterol_preview_flattens_nonplanar_fused_rings(self):
-        record = json.loads((ROOT / "测试" / "输出" / "当前拍平案例.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("当前拍平案例.json")
         before = copy.deepcopy(record)
         heavy = [atom["id"] for atom in record["atoms"] if atom["element"] != "H"]
         result = flatten_overrides(record, plane="xy")
@@ -63,8 +69,7 @@ class DisplayGeometryTests(unittest.TestCase):
         self.assertEqual(record, before)
 
     def test_cholesterol_middle_chain_moves_both_outer_components_rigidly(self):
-        record = json.loads((ROOT / "测试" / "输出" / "当前拍平案例.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("当前拍平案例.json")
         result = flatten_overrides(record, atom_ids=[23, 24], plane="xy")
         self.assertGreater(distance(result["20"], position(record, 20)), 1e-4)
         self.assertGreater(distance(result["25"], position(record, 25)), 1e-4)
@@ -76,8 +81,7 @@ class DisplayGeometryTests(unittest.TestCase):
             self.assertLess(distance(result[atom_id], repeat[atom_id]), 1e-7)
 
     def test_cholesterol_plane_groups_flatten_ring_and_reject_real_conflict(self):
-        record = json.loads((ROOT / "测试" / "输出" / "当前拍平案例.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("当前拍平案例.json")
         first = {"atom_ids": [1, 2], "origin": [0, 0, 0],
                  "normal": [0, 0, 1]}
         result = apply_plane_groups(record, {"1": first})
@@ -90,8 +94,7 @@ class DisplayGeometryTests(unittest.TestCase):
             apply_plane_groups(record, {"1": first, "2": different})
 
     def test_two_separate_chain_groups_keep_distinct_planes_and_repeat(self):
-        record = json.loads((ROOT / "测试" / "输出" / "二维拍平长链.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("二维拍平长链.json")
         original = copy.deepcopy(record)
         groups = {
             "2": {"atom_ids": [6, 7, 8, 9], "origin": [0, 0, 0],
@@ -123,8 +126,7 @@ class DisplayGeometryTests(unittest.TestCase):
         self.assertEqual(groups, saved_groups)
 
     def test_carried_group_plane_uses_the_same_rigid_transform_as_its_atoms(self):
-        record = json.loads((ROOT / "测试" / "输出" / "二维拍平长链.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("二维拍平长链.json")
         by_id, positions, heavy = display_geometry._record_positions(record)
         depiction = display_geometry._depiction_points(record, positions, heavy)
         carried = {}
@@ -169,8 +171,7 @@ class DisplayGeometryTests(unittest.TestCase):
             apply_plane_groups(record, groups)
 
     def test_existing_invalid_preview_hotspots_raise_instead_of_fallback(self):
-        record = json.loads((ROOT / "测试" / "输出" / "二维拍平长链.json")
-                            .read_text(encoding="utf-8"))
+        record = _load_fixture("二维拍平长链.json")
         for corrupt in (lambda points: points["0"].__setitem__(0, float("nan")),
                         lambda points: points["0"].__setitem__(0, True),
                         lambda points: points.__setitem__("0", points["1"][:]),
@@ -205,8 +206,7 @@ class DisplayGeometryTests(unittest.TestCase):
         self.assertEqual(self.record, before)
 
     def test_saved_benzyl_alcohol_fixture_follows_depiction(self):
-        fixture = ROOT / "测试" / "输出" / "苄醇三维.json"
-        record = json.loads(fixture.read_text(encoding="utf-8"))
+        record = _load_fixture("苄醇三维.json")
         result = flatten_overrides(record)
         heavy = [atom["id"] for atom in record["atoms"] if atom["element"] != "H"]
         center, plane_normal = display_geometry._plane([result[str(i)] for i in heavy])

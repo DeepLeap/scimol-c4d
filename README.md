@@ -8,13 +8,15 @@
 
 # SciMol C4D
 
-**Cinema 4D 科研化学分子三维球棍 / 填充生成与二维平面编辑插件**
+**Cinema 4D 科研化学分子生成插件**
+
+支持名称 / 分子式 / SMILES 搜索与 ChemDraw 复制导入，一键生成精美三维分子模型
 
 <p>
   <img src="https://img.shields.io/badge/Cinema_4D-2025.3+_~_2027-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Cinema 4D" />
-  <img src="https://img.shields.io/badge/Python-3.11-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Python" />
+  <img src="https://img.shields.io/badge/Redshift-Standard_材质-111827?style=flat-square&labelColor=111827&color=0F766E" alt="Redshift" />
+  <img src="https://img.shields.io/badge/ChemDraw-复制_%2F_导入-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="ChemDraw" />
   <img src="https://img.shields.io/badge/RDKit-化学引擎-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="RDKit" />
-  <img src="https://img.shields.io/badge/Redshift-Standard_材质-111827?style=flat-square&labelColor=111827&color=2DD4BF" alt="Redshift" />
   <img src="https://img.shields.io/badge/License-MIT-111827?style=flat-square&labelColor=111827&color=94A3B8" alt="MIT" />
 </p>
 
@@ -26,127 +28,102 @@
 
 ---
 
-## 定位
+## 简介
 
-SciMol C4D 让你在 Cinema 4D 中直接搜索化学名称、分子式、SMILES 或导入 ChemDraw 文件，即刻生成可实时调整参数的三维球棍 / 空间填充 / 细棍骨架分子模型，并在独立窗口中进行二维结构编辑与平面展开——为科研期刊封面、TOC 图和机理动画提供端到端的分子可视化工作流。
+**SciMol C4D** 是一款专为**学术期刊封面（Cover Art）、TOC 摘要图、论文插图与科研机理动画**打造的 Cinema 4D 化学分子建模插件。
 
-化学解析和三维构象由项目本地 RDKit 进程完成，C4D 内使用原生 Python 面板和 Redshift Standard 节点材质。
+无需在多个软件之间来回导出 OBJ/FBX、也无需手动重绑材质——在插件内搜索分子或直接从 ChemDraw 复制结构，即可在 Cinema 4D 中一键生成比例精准、自带 **Redshift Standard 节点材质**的三维分子模型，并支持所见即所得的实时调参。
 
-## 功能一览
+## 核心亮点
 
-| 类别 | 能力 |
-| :--- | :--- |
-| **统一搜索** | 中文名 · 英文名 · 分子式 · SMILES · ChemDraw CDXML/MOL/SDF，一个输入框自动识别 |
-| **三维生成** | 球棍 · 空间填充 · 细棍骨架三种模式一键切换 |
-| **实时调整** | 大小 · 粗细 · 间距 · 分段 · 封顶 · 显示氢 · 元素缩放，全部约 40ms 节流实时联动 |
-| **科研配色** | CPK 经典 · Nature 银灰学术 · Science 冷调晶体 · 明快白底插图 · 与可竹青（品牌）五套预设，支持单步撤销 |
-| **二维编辑** | 结构详情浮窗：点选 / 框选 / 选环 / 反选原子，右键平面分组，全部拍平或局部拍平 |
-| **智能联动** | 参数置灰 · 材质继承 · 双色键分界 · 完成冻结 · 接管所选 |
-| **收藏管理** | 文件夹 · 保存配置 · 另存配置 · 导入导出 · 常用排行 |
-| **热进程复用** | `--worker-loop` 常驻 RDKit，消除约 4s 冷启动延迟，81 词离线词库 |
+1. **无缝衔接 ChemDraw**：在 ChemDraw 中选中结构复制为 SMILES 直接粘贴即可生成；也支持直接导入 `.cdxml`、`.mol`、`.sdf` 结构文件。
+2. **中英文 / 分子式 / SMILES 一框即搜**：内置 81 个常见科研分子与溶剂缩写（如 `THF`、`DMSO`、`DMF`、`阿司匹林`）离线词库，自动识别下标分子式（如 `C₆H₁₂O₆`）并支持联动 PubChem 在线检索。
+3. **一键生成精美三维模型与 Redshift 材质**：支持球棍、空间填充、细棍骨架三种模式切换；自动构建原子与双色分割化学键独立材质，内置 **经典 CPK、Nature 银灰学术、Science 冷调晶体、明快白底插图、与可竹青** 5 套科研配色预设，多材质批量改色支持单步撤销。
+4. **所见即所得实时调参**：单击缩略图即生成预览，切换分子自动替换当前预览不堆冗余模型；滑块实时调节原子大小、键粗细、多键间距、氢显示与元素单独缩放，满意后点击「完成」定稿，并可通过「接管所选」重新联动场景模型。
+5. **实用附带工具**：提供本地常用记录、自定义收藏夹与外观预设保存；点击右下角「结构详情」可展开二维结构视图，辅助完成单原子/单键局部尺寸微调与分子骨架拍平。
 
-## 安装
+---
 
-### 1. 克隆仓库
+## 安装指南
 
-```bash
-git clone https://github.com/DeepLeap/scimol-c4d.git
-```
+### 方式一：复制给任何 AI 自动安装（推荐）
 
-### 2. 安装化学运行环境
+如果你正在使用 **Cursor、Claude Code、Codex、Trae、Windsurf、Antigravity** 或其他支持终端命令的 AI 助手，直接点击下方代码块右上角的复制按钮，把整段提示词发给它即可自动完成下载、依赖配置与 C4D 菜单挂载：
 
-> [!IMPORTANT]
-> RDKit 安装在项目本地 `.runtime/`，**不需要**装进 C4D 内置 Python。
+````text
+请帮我在当前 Windows 电脑上自动安装并配置 Cinema 4D 插件「SciMol C4D」（仓库：https://github.com/DeepLeap/scimol-c4d）：
+1. 检查本机是否有 64 位 Python（3.10~3.13）；若没有，请先征得我同意后用 winget 安装 Python 3.12。
+2. 将 https://github.com/DeepLeap/scimol-c4d 下载（git clone 或下载 main 分支 ZIP 解压）到独立固定目录 `%APPDATA%\Maxon\SciMol-C4D`（注意：切勿把整个项目直接放进 C4D 的 library\scripts 目录，以免 C4D 启动时扫描虚拟环境导致卡顿）。
+3. 在该目录下执行 `powershell -ExecutionPolicy Bypass -File .\安装运行环境.ps1 -RegisterC4D`，自动创建本地 `.runtime` 化学环境、完成 RDKit 自检，并将带图标的轻量化启动器注册到我电脑上的 Cinema 4D「用户脚本」菜单。
+4. 安装验证通过后，请用通俗中文告诉我安装路径，以及打开 Cinema 4D 后在哪个菜单点击启动。
+````
 
-```powershell
-# Windows PowerShell（管理员权限）
-cd scimol-c4d
-.\安装运行环境.ps1
-```
+### 方式二：手动安装（3 步完成）
 
-脚本会自动创建 `.runtime/` 虚拟环境并安装 `requirements.txt` 中的依赖。
+1. **下载项目到独立目录**
+   ```bash
+   git clone https://github.com/DeepLeap/scimol-c4d.git
+   ```
+   > [!TIP]
+   > 建议将项目放在固定目录（例如 `D:\Plugins\scimol-c4d` 或 `%APPDATA%\Maxon\SciMol-C4D`），**不要**把整个仓库直接放进 C4D 的 `library\scripts` 目录。
 
-### 3. 在 C4D 中启动
+2. **一键配置环境并注册菜单**（需提前安装 64 位 Python 3.10~3.13）
+   在项目根目录打开 PowerShell 运行：
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\安装运行环境.ps1 -RegisterC4D
+   ```
+   脚本会自动在项目本地创建 `.runtime/` 独立虚拟环境并安装 RDKit（**不会改动 C4D 内置 Python**，若默认源较慢会自动切换国内清华镜像源），随后将轻量化启动脚本与图标挂载进本机 Cinema 4D 的用户脚本目录。
 
-- **方式一**：在 C4D 脚本管理器中打开并执行 `分子球棍生成器.py`
-- **方式二**：通过 AI 插件中心加载
+3. **在 Cinema 4D 中启动**
+   打开或重启 Cinema 4D，点击顶部菜单 **扩展 (Extensions) → 用户脚本 (User Scripts) → 分子球棍生成器** 即可启动；也可在「自定义命令」中将其拖到工具栏固定为图标按钮，或在「脚本管理器」中直接打开运行 `分子球棍生成器.py`。
 
-> [!NOTE]
-> 独立 `.pyp` 菜单注册需要合法 Maxon 插件 ID，参见 `插件/说明.md`。
+---
 
-## 工作流
-
-```
-搜索/导入 → 单击缩略图 → 实时预览 → 调参/配色/平面编辑 → 完成
-                 ↑                                    ↓
-                 └──── 切换结构替换同一预览 ←──────────┘
-                                           接管所选 → 重新绑定
-```
-
-1. 在输入框搜索名称 / 分子式 / SMILES，或导入 ChemDraw 文件
-2. 单击缩略图生成实时预览，继续点击替换同一个模型
-3. 右侧面板调整外观参数，所见即所得
-4. 打开"结构详情"进行二维平面编辑和平面分组
-5. 点击"完成"冻结模型；下次单击才新建
-
-## 项目结构
+## 快速上手
 
 ```
+搜索或 ChemDraw 粘贴/导入 → 单击缩略图生成预览 → 调参 / 科研配色 → 点击「完成」定稿
+                                   ↑                                      ↓
+                                   └────────── 继续点击替换同一预览 ────────┘
+```
+
+- **ChemDraw 快捷联动**：在 ChemDraw 中选中目标分子，按 `Ctrl+Alt+C`（或菜单 `Edit → Copy As → SMILES`），回到插件点击搜索框旁的「粘贴」按钮，即可立刻生成三维结构。
+- **材质共享与撤销**：默认开启「材质继承」，同一元素材质可跨分子共享；切换科研配色方案后可直接用 C4D 原生 `Ctrl+Z` 单步撤回。
+
+---
+
+## 目录说明
+
+```text
 scimol-c4d/
-├── 分子球棍生成器.py      # C4D 入口脚本
-├── 脚本信息.json          # 插件元数据
-├── scimol_c4d/            # 核心模块
-│   ├── __init__.py        # 版本与作者信息
-│   ├── backend.py         # RDKit 子进程管理
-│   ├── chemistry_worker.py # 化学计算热进程
-│   ├── c4d_builder.py     # 三维模型构建
-│   ├── browser_ui.py      # 主面板界面逻辑
-│   ├── browser_layout.py  # 主面板布局
-│   ├── atom_selector.py   # 二维选择与平面编辑
-│   ├── floating_windows.py # Win32 浮窗跟随
-│   ├── native_ui.py       # 品牌 Logo 组件
-│   └── ...                # 其他模块
-├── assets/                # 图标与品牌资源
-│   └── brand/             # 与可 | YUKE 品牌 SVG
-├── 测试/                  # 单元测试 & 宿主验收脚本
-│   ├── fixtures/          # 测试固件
-│   ├── 验证本地.py        # 完整本地验证
-│   └── test_*.py          # 各模块测试
-├── 安装运行环境.ps1       # 一键安装化学依赖
-├── requirements.txt       # Python 依赖
-└── 插件/说明.md           # Maxon 插件 ID 说明
+├── 分子球棍生成器.py     # C4D 入口脚本（在脚本管理器或用户脚本菜单中调用）
+├── 安装运行环境.ps1      # 一键初始化本地 .runtime 化学环境并注册 C4D 菜单
+├── requirements.txt      # 本地化学引擎依赖（rdkit / Pillow / numpy）
+├── 脚本信息.json         # 插件名称、版本与基础元数据
+├── 界面图标.png / 图标.png # 菜单栏与展示图标
+├── scimol_c4d/           # 插件核心源码（化学后台、三维建模、原生 UI 与浮窗交互）
+├── assets/               # 界面按钮图标与「与可 | YUKE」品牌视觉资源
+└── 测试/                 # 本地单元测试（验证本地.py）与 C4D 宿主验收脚本
 ```
 
-## 测试
+## 系统要求与适用范围
+
+| 项目 | 说明 |
+| :--- | :--- |
+| **Cinema 4D** | 2025.3+ ~ 2027（已在 2027.0.0 完整验证） |
+| **渲染器** | Redshift（自动构建 Standard 节点材质） |
+| **操作系统** | Windows（需安装 64 位 Python 3.10~3.13 用于本地 RDKit 后台） |
+| **支持范围** | 单个共价连接分子，最多 300 个原子（含氢）；不支持盐、晶体晶胞、蛋白质大分子及图片 OCR 识别 |
+
+<details>
+<summary>开发者自检命令</summary>
 
 ```powershell
-# 使用项目本地运行环境执行完整验证
+# 运行全量本地单元测试、Python 3.11 AST 语法检查与资源完整性校验
 .\.runtime\Scripts\python.exe 测试\验证本地.py
 ```
 
-验证内容包括：
-
-- 全部单元测试（281+ 项）
-- 70 个源文件 Python 3.11 AST 语法检查
-- 依赖与资源完整性校验
-
-C4D 宿主验收脚本（`测试/C4D*.py`）需要在 Cinema 4D 内通过 MCP 或脚本管理器执行。
-
-## 兼容性
-
-| 环境 | 版本 |
-| :--- | :--- |
-| Cinema 4D | 2025.3.3+（已在 2027.0.0 验证） |
-| Python | 3.11 |
-| 渲染器 | Redshift Standard 节点材质 |
-| 操作系统 | Windows |
-
-## 限制
-
-- 处理单个共价连接分子，最多 300 个原子（含氢）
-- 盐、多组分、可变基团、晶体与蛋白质不在当前范围
-- 不含识图、手绘、片段拼接或渲染输出功能
-- 首次在线搜索受 PubChem 网络影响
+</details>
 
 ## 许可证
 

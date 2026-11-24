@@ -23,6 +23,12 @@ from 测试.test_ui_logic import FakeBackend, FakeDocument
 
 
 class BackendPersistentTests(unittest.TestCase):
+    def setUp(self):
+        if not backend_mod.PYTHON.is_file():
+            patcher = patch.object(backend_mod, "PYTHON", Path(sys.executable))
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
     def test_persistent_worker_reuses_same_pid_and_closes_cleanly(self):
         backend = backend_mod.Backend()
         self.addCleanup(backend.close)

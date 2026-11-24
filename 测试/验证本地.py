@@ -138,7 +138,9 @@ def main() -> int:
         failures.append("manifest, required files, or icon dimensions invalid")
 
     # Validate the prepared, 3D-ready fixture using the pure records module.
-    fixture_path = OUTPUT / "苄醇三维.json"
+    fixture_path = TESTS / "fixtures" / "苄醇三维.json"
+    if not fixture_path.is_file():
+        fixture_path = OUTPUT / "苄醇三维.json"
     fixture_ok = False
     fixture_info = {"path": str(fixture_path.relative_to(ROOT)), "exists": fixture_path.is_file()}
     if fixture_path.is_file():
